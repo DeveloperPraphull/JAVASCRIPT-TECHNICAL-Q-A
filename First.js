@@ -18,3 +18,27 @@ for(let x of str){
     }
 }
 console.log(obj)
+
+
+// check code and provide answer
+
+let num = 1;
+const sum = ++num + num++
+console.log(sum)
+
+// 
+
+console.log("3"+ 1+ 2)
+console.log( 1+ 2+ "3")
+
+//  function call 
+
+function Pay(event){
+    if(event.isTrusted){
+         alert("1000 INR Paid");
+    }
+    else{
+         alert("froud pay");
+    }
+   
+}

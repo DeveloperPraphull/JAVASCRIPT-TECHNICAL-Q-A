@@ -42,3 +42,43 @@ function Pay(event){
     }
    
 }
+
+    
+
+function isValid(age) {
+    if(age) {
+        let x;
+        var varMsg = "valid";
+        }
+        console.log(varMsg);
+}
+
+isValid(21);
+
+function Human(fname,lNmae) {
+    this.firstName = fname;
+    this.lastName = lNmae;
+}
+
+const MrX = new Human("Mr", "X");
+const Rock = Human("The", "Rock");
+
+console.log(MrX);
+console.log(Rock);
+
+
+const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+const myArr = JSON.parse(text);
+console.log(myArr)
+console.log(typeof text)
+console.log(typeof myArr)
+
+
+
+const array = ["1","2","3","4","5"];
+const strs = JSON.stringify(array);
+console.log(strs)
+
+console.log(typeof array); // "object" → because arrays are objects
+console.log(typeof strs);  // "string" → JSON.stringify returns a string
+

@@ -20,6 +20,25 @@ for(let x of str){
 console.log(obj)
 
 
+
+const str1 = "hare krishna har ram hare kriswhna krishna"
+
+const obj1 = {
+    
+};
+
+for(let x of str1){
+    if(obj1[x]){
+        obj1[x] += 1;
+    }
+    else{
+        obj1[x]=1
+    }
+}
+console.log(obj1)
+
+
+
 // check code and provide answer
 
 let num = 1;
@@ -40,7 +59,6 @@ function Pay(event){
     else{
          alert("froud pay");
     }
-   
 }
 
     
@@ -82,3 +100,37 @@ console.log(strs)
 console.log(typeof array); // "object" → because arrays are objects
 console.log(typeof strs);  // "string" → JSON.stringify returns a string
 
+
+
+
+const user = { name: "John", age: 25 };
+for (const key in user) {
+  console.log(key + ": " + user[key]); // name: John, age: 25
+}
+
+
+const users = [
+  { name: "John", age: 22 },
+  { name: "Jane", age: 35 },
+  { name: "Sam", age: 25 }
+];
+
+const Users = users.filter( user => user.age >= 25);
+console.log(Users)
+// Output: [{ name: "John", active: true }, { name: "Sam", active: true }]
+
+
+
+const usersn = [
+  { name: "John", age: 22 },
+  { name: "Jane", age: 35 },
+  { name: "Sam", age: 25 }
+];
+
+const result = [];
+for (const user of usersn) {
+  if (user.age <= 25) {
+    result.push(user);
+  }
+}
+console.log(result);
